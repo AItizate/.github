@@ -1,48 +1,39 @@
-# Contributing to AI-tizate
+# Contributing
 
-First of all, thank you for considering contributing to AI-tizate! We appreciate your time and effort.
+We're glad you're here.
 
-## How to Contribute
+## Ways to contribute
 
-We welcome contributions in various forms, including:
+- **Report a bug** — something broke, tell us
+- **Request a feature** — a component, bundle, or pattern you'd like to see
+- **Share an idea** — even half-baked ones are welcome
+- **Send a PR** — fix something, add something, improve something
+- **Use it and tell us** — feedback is a contribution too
 
-- Reporting bugs
-- Suggesting new features
-- Improving documentation
-- Submitting pull requests
+## Sending a PR
 
-## Bug Reports
+1. Fork the repo
+2. Create a branch from `main`
+3. Make your changes
+4. Make sure `kustomize build` passes for any affected overlays
+5. Add `.env.example` files if you introduce new secrets
+6. Open a PR — describe what you did and how to test it
 
-If you find a bug, please create a [bug report](/.github/ISSUE_TEMPLATE/bug_report.md). Make sure to include as much detail as possible, such as:
+We'll review it. If something needs adjusting, we'll work through
+it together.
 
-- A clear and descriptive title
-- Steps to reproduce the bug
-- The expected and actual behavior
-- Your environment details (OS, browser, etc.)
+## Adding a component
 
-## Feature Requests
+See `CONTRIBUTING.md` in any repo that has one (like
+[forjate](https://github.com/AItizate/forjate/blob/main/CONTRIBUTING.md))
+for patterns specific to that project.
 
-If you have an idea for a new feature, please create a [feature request](/.github/ISSUE_TEMPLATE/feature_request.md). Be sure to include:
+## No rules, just guidelines
 
-- A clear and descriptive title
-- A detailed description of the feature
-- The problem it solves
-- Any alternative solutions you've considered
+We don't have a strict style guide. Write clear YAML, use
+meaningful names, keep patches minimal. If it works and it's
+readable, it's good.
 
-## Pull Requests
+## Questions?
 
-If you want to contribute with code, please follow these steps:
-
-1. Fork the repository
-2. Create a new branch for your changes
-3. Make your changes and commit them with a clear and descriptive message
-4. Push your changes to your fork
-5. Create a pull request to our `main` branch
-
-We will review your pull request as soon as possible.
-
-## Support
-
-If you need help or have any questions, please create a [support request](/.github/ISSUE_TEMPLATE/support_request.md).
-
-Thank you again for your contribution!
+Open a support issue. No question is too small.

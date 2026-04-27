@@ -1,34 +1,24 @@
 name: Feature Request
-description: Ask for a feature on this project.
+description: A new component, bundle, or improvement.
 title: "[FEAT]: "
-labels: ["feature-request", "enhancement"]
+labels: ["enhancement"]
 body:
   - type: textarea
-    id: related-problem
+    id: idea
     attributes:
-      label: "Is your feature request related to a problem?"
-      description: "A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]"
-      placeholder: "Describe the problem here..."
+      label: "What's the idea?"
+      description: "What do you want to see? A new component, a better pattern, a missing integration?"
     validations:
       required: true
   - type: textarea
-    id: solution
+    id: why
     attributes:
-      label: "Describe the solution you'd like"
-      description: "A clear and concise description of what you want to happen."
+      label: "Why does it matter?"
+      description: "What problem does it solve? What does it enable?"
     validations:
       required: true
   - type: textarea
     id: alternatives
     attributes:
-      label: "Describe alternatives you've considered"
-      description: "A clear and concise description of any alternative solutions or features you've considered."
-  - type: checkboxes
-    id: acceptance-criteria
-    attributes:
-      label: "Acceptance Criteria"
-      description: "What needs to be true for the feature to be considered complete?"
-      options:
-        - label: "The feature is implemented as described in the solution."
-        - label: "The feature is documented."
-        - label: "The feature has unit tests."
+      label: "Alternatives you've considered"
+      description: "Anything else you've tried or thought about."

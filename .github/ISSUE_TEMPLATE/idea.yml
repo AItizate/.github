@@ -1,21 +1,17 @@
 name: Idea
-description: Suggest an idea for this project.
+description: A thought, a direction, something worth exploring.
 title: "[IDEA]: "
 labels: ["idea"]
 body:
   - type: textarea
     id: idea
     attributes:
-      label: "What's your idea?"
-      description: "A clear and concise description of your idea."
-      placeholder: "Describe your idea here..."
+      label: "What's on your mind?"
+      placeholder: "What if we..."
     validations:
       required: true
   - type: textarea
     id: motivation
     attributes:
-      label: "What is the motivation for this idea?"
-      description: "A clear and concise description of the motivation for this idea."
-      placeholder: "Describe the motivation here..."
-    validations:
-      required: true
+      label: "Why?"
+      description: "What's driving this thought?"
