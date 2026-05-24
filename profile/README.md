@@ -1,28 +1,70 @@
-# Welcome to Aitizate
+# AItizate
 
-We live in a dystopian present of technology. The constant noise around artificial intelligence—a mix of hype, fear, and confusion—has put us all in check. Technical experts, CTOs, developers, everyone. Every technological revolution brings brilliant promises but also chaos: more pressure, more speed, more uncertainty. This time it's different. This wave hits harder, impacting egos, roles, and even jobs previously deemed untouchable.
+> _verb. To upgrade yourself with AI before AI gets to decide what you become._
 
-Yet, if we look closely, it's a familiar story: the organized chaos of technology. The difference lies in how we respond.
+## The dystopian present
 
-## What is Aitizate?
+There's a dystopian present of technology. The constant noise around artificial intelligence — a mix of hype, fear, and vendor pitches — has put builders in check. CTOs, founders, engineers shipping their first product, your uncle on LinkedIn. Every wave brings the same chaos: more pressure, more speed, less time to think. The difference this time is that the wave is hitting the work itself, not just the marketing around it.
 
-Aitizate emerges precisely within this chaotic context. Designed by developers for developers, our platform does not aim to add more noise but rather eliminate it. We know firsthand that taking the first step toward effective AI solutions is always the hardest. There are too many tools, too many methods, too many promises.
+Most of the conversation is anchored on the wrong question. _"Will I get replaced?"_ Most of the answers being sold are dressed-up versions of the same anxiety. Another platform that promises to transform you. Another framework that's going to change how you build forever.
 
-We simplify that critical step. How? By relying on years of experience in developing real and concrete technology solutions. We don't sell hype, but a clear, defined, and scalable path to take your company from uncertainty to effective implementation within just one week.
+There's another question, harder and more useful:
 
-With Aitizate, implementing AI ceases to be a leap into the void and becomes a structured, scalable, and transparent process. We deeply understand the technical challenges, business pressures, and personal dilemmas brought by this revolution.
+> **What version of yourself can you build, if you stop fighting this and start using it?**
 
-Our solution focuses on key concepts that truly matter:
+That's where this org starts.
 
-- Real and transparent control over usage and costs.
-- Core security and privacy.
-- Effortless technical scalability.
-- Agile and rapid prototyping with measurable results from day one.
+## What "AItizate" means
 
-## Documentation
+It's a verb, in español. Roughly: _to make yourself AI._ Not in the marketing sense — _AI-powered, AI-driven, AI-native, AI-first_. In the personal sense. **You** become the thing that uses AI to think, build, ship faster than yesterday. AI doesn't become you. You don't become AI. You become a version of yourself that ships.
 
-You can find our public documentation [here](https://aitizate.github.io/docs/intro).
+It's not a methodology. It's not a course. It's not even a product. It's a decision. You either make it or you wait until something else makes it for you.
 
-## Contributing
+This GitHub org is what happens after that decision: the platform, the workflows, the diagrams — the artifacts of one builder taking the verb seriously.
 
-We are happy to receive contributions from the community. If you would like to contribute, please read our [contribution guide](../.github/CONTRIBUTING.md).
+## What I build
+
+![Reference architecture](profile/assets/reference-architecture.png)
+
+A factory for the infrastructure I wish I'd had every time I started a project. Five layers, modular, the same shape on a Raspberry Pi or across three clouds. Boring tech. Apache 2.0. Predictable cost — none of that "cloud bill 3x what I modeled" surprise that ate one of my startups.
+
+The platform lives in **[forjate](https://github.com/AItizate/forjate)**. The name means _forge yourself_. Same verb, same idea, applied to infra.
+
+## Open source
+
+Code is the most honest form of marketing. If the README oversells, the code embarrasses it.
+
+| Repo | What it is | License |
+|------|------------|---------|
+| [`forjate`](https://github.com/AItizate/forjate) | Kustomize-driven Kubernetes factory. 40+ optional components. Eight reference overlays — from a home lab on one Pi to multi-tenant multi-cloud. | Apache 2.0 |
+| [`gh-actions-templates`](https://github.com/AItizate/gh-actions-templates) | Reusable GitHub Actions: build + **Trivy scan** + push, Conventional Commits validation, release tagging, webhook notifications. Pin `@v1` and roll forward. | Apache 2.0 |
+
+Both repos are public. Anything you find inside, you can use anywhere — work, side projects, your own org. Attribution appreciated, never required.
+
+## How I ship
+
+![DevSecOps gates](profile/assets/devsecops-gates.png)
+
+Every stage from `git push` to `kubectl apply` has its own gates. The magenta-bordered chips are gates I run today, shipped in the repos above. The rest are the recommendations I'd compose on top.
+
+I learned the hard way that security isn't a final step you add before launch. It's a control at every step, expressed as code, versioned, reviewable. The 3am cold sweat I mentioned earlier — that was the night I didn't have any of these gates.
+
+## A few things I stopped pretending to believe
+
+- _"Just put it in the cloud"_ was never the answer. **Predictable** cost matters more than _small_ cost. A bill you can model beats a bill you can argue down.
+- _"AI-powered"_ is not a feature. What it costs to run, what data it sees, what happens when it's wrong — those are features.
+- A laptop running k3s is a production system **if the workload fits**. A two-node bare-metal cluster is a real platform. You don't always need a region. You almost never need three.
+- **GitOps is not a fad.** Git as the source of truth makes the cluster auditable, restorable, and impersonal. You lose the "who applied that yesterday" conversation, forever.
+- The most useful thing I've done with AI is not _automate_ work. It's _shorten the distance between idea and shipped_. That's the whole pitch.
+
+## If you got here
+
+You probably also build things. Or you want to.
+
+The repos above are open. The [contribution guide](https://github.com/AItizate/.github/blob/main/CONTRIBUTING.md) is short. The voice everywhere is the same as this page: direct, honest about scars, allergic to hype.
+
+If something doesn't make sense, open an issue. If something is missing, send a PR. If you're far enough on your own AItizate-yourself journey to want to compare notes, you'll find me at the bottom of every commit.
+
+---
+
+> _"Sé impecable con tus palabras."_ — Don Miguel Ruiz. The closest thing I have to a craft rule. It applies to commit messages, too.
