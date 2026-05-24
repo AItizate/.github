@@ -24,7 +24,7 @@ This GitHub org is what happens after that decision: the platform, the workflows
 
 ## What I build
 
-![Reference architecture](profile/assets/reference-architecture.png)
+![Reference architecture](assets/reference-architecture.png)
 
 A factory for the infrastructure I wish I'd had every time I started a project. Five layers, modular, the same shape on a Raspberry Pi or across three clouds. Boring tech. Apache 2.0. Predictable cost — none of that "cloud bill 3x what I modeled" surprise that ate one of my startups.
 
@@ -43,7 +43,7 @@ Both repos are public. Anything you find inside, you can use anywhere — work, 
 
 ## How I ship
 
-![DevSecOps gates](profile/assets/devsecops-gates.png)
+![DevSecOps gates](assets/devsecops-gates.png)
 
 Every stage from `git push` to `kubectl apply` has its own gates. The magenta-bordered chips are gates I run today, shipped in the repos above. The rest are the recommendations I'd compose on top.
 
